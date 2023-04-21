@@ -182,5 +182,26 @@ img[src*='earth']{
         transform: rotate(360deg)translate(-165px)rotate(-360deg);
     }
 }
+/* CONTAINER-2 */
 
+.container-2{
+    margin-block: 6rem;
+    padding-inline: 7.75rem;
+}
+.ella-doings p{
+    font-weight: 600;
+    font-size: 2.5rem !important;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    max-width: 585px;
+}
+.ella-doings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 6.25rem;
+}
+.ella-doings img{
+    border-radius: 20px;
+}
 
