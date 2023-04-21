@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Karla:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
 
 *{
     padding: 0;
@@ -12,7 +10,7 @@
 }
 
 html {
-    font-family: Poppins;
+    font-family: Figtree;
     font-weight: 400;
     font-size: 16px;
     box-sizing: border-box;
@@ -20,16 +18,16 @@ html {
     color: var(--black);
 }
 h1{
-    font-family: Montserrat, Poppins;
+    font-family: Figtree, Poppins;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 3.5rem;
     line-height: 92px;
     margin-block: 2rem;
     
 }
 h2{
-    font-family: 'Clash Display', Poppins;
+    font-family: Figtree, Poppins;
     font-style: normal;
     font-weight: 700;
     font-size: 2.625rem;
@@ -37,7 +35,7 @@ h2{
     margin-block: 1.6875rem;
 }
 h3{
-    font-family: 'Clash Display', Poppins;
+    font-family: Figtree, Poppins;
     font-style: normal;
     font-weight: 700;
     font-size: 1.3125rem;
@@ -45,16 +43,17 @@ h3{
     margin-top: 1.6875rem;
 }
 h4{
-    font-family: 'Clash Display', Poppins;
+    font-family: Figtree, Poppins;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 24px;
     color: #FAFAFA;
 }
 p{
     line-height: 26px;
     font-size: 1rem;
-    font-family: 'Clash Display', Poppins;
+    font-family: Figtree, Poppins;
+    font-weight: 500;
 }
 
 .h12{
@@ -78,7 +77,7 @@ ul,li{
 
 }
 li{
-    font-family: 'Clash Display', Poppins;
+    font-family: Figtree, Poppins;
     font-weight: 600;
     font-size: 1rem;
     line-height: 24px;
@@ -86,7 +85,7 @@ li{
 }
 a {
     color: black;
-    font-family: 'Clash Display', ;
+    font-family: Figtree, Poppins;
     font-weight: 600;
     text-decoration: none;
 
@@ -95,23 +94,6 @@ a {
 
 /* HEADER */
 
-
-/* .sign-up{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding-right: 4.375rem;
-    
-}
-.sign-up a{
-    border: 1px solid #040301;
-    padding: 1rem 3rem;
-    border-radius: 5px;
-
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-} */
 
 button{
     background: #630000;
@@ -122,7 +104,7 @@ button{
     cursor: pointer;
     box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
 
-    font-family: Montserrat;
+    font-family: Figtree;
     font-size: 1rem;
     line-height: 24px;
     font-weight: 500;
@@ -162,7 +144,7 @@ nav > .login-btn {
     display: flex;
     align-items: center;
     gap: 2.5rem;
-    background-image: url(/Images/Imgg.svg) ;
+    background-image: url(Images/Imgg.svg) ;
     padding-inline: 1rem;
 }
 .first-container .re{
