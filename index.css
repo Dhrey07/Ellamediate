@@ -186,7 +186,7 @@ img[src*='earth']{
 .container-2{
     padding-block: 6rem;
     padding-inline: 7.75rem;
-    background-image: url(/Images/bkg.svg);
+    background-image: url(Images/bkg.svg);
     background-repeat: no-repeat;
 }
 .ella-doings p{
