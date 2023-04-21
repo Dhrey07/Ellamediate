@@ -163,7 +163,7 @@ nav > .login-btn {
     align-items: center;
     gap: 2.5rem;
     background-image: url(Images/Imgg.svg) ;
-    padding-inline: 1rem;
+    padding-inline: 1.2rem;
 }
 .first-container .re{
     color: rgb(250, 137, 0);
