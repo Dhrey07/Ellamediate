@@ -57,12 +57,11 @@ p{
 }
 
 .h12{
+    
     max-width: 1440px;
-
 
     padding-inline: 1rem;
     margin: auto;
-    background-color: #FAFAFA;
     
     
 }
@@ -145,7 +144,7 @@ nav > .login-btn {
     align-items: center;
     gap: 2.5rem;
     background-image: url(Images/Imgg.svg) ;
-    padding-inline: 1rem;
+    padding-inline: 3rem;
 }
 .first-container .re{
     color: rgb(250, 137, 0);
@@ -185,8 +184,10 @@ img[src*='earth']{
 /* CONTAINER-2 */
 
 .container-2{
-    margin-block: 6rem;
+    padding-block: 6rem;
     padding-inline: 7.75rem;
+    background-image: url(/Images/bkg.svg);
+    background-repeat: no-repeat;
 }
 .ella-doings p{
     font-weight: 600;
@@ -194,12 +195,13 @@ img[src*='earth']{
     line-height: 52px;
     letter-spacing: 0.2px;
     max-width: 585px;
+    color: #FAFAFA;
 }
 .ella-doings{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-block: 6.25rem;
+    margin-bottom: 60px;
 }
 .ella-doings img{
     border-radius: 20px;
