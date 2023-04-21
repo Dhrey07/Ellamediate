@@ -134,7 +134,7 @@ nav > .login-btn {
     height: 3px;
     width: 0;
     background: #18181B;
-    transition: .5s;
+    transition: 0.5s;
 }
 .nav-links li a:hover::after{
     width: 100%;
