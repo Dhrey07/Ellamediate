@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+:root{
+    --lower-bg: #FAFAFA;
+}
+
+html {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: var(--black);
+}
+h1{
+    font-family: Montserrat, Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 92px;
+    margin-block: 2rem;
+    
+}
+h2{
+    font-family: 'Clash Display', Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.625rem;
+    line-height: 48px;
+    margin-block: 1.6875rem;
+}
+h3{
+    font-family: 'Clash Display', Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3125rem;
+    line-height: 48px;
+    margin-top: 1.6875rem;
+}
+h4{
+    font-family: 'Clash Display', Poppins;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #FAFAFA;
+}
+p{
+    line-height: 26px;
+    font-size: 1rem;
+    font-family: 'Clash Display', Poppins;
+}
+
+.h12{
+    max-width: 1440px;
+
+
+    padding-inline: 1rem;
+    margin: auto;
+    background-color: #FAFAFA;
+    
+    
+}
+header{
+    width: 100%;
+    padding: 2.5rem 0rem;
+    background-color: #FAFAFA;
+    
+}
+ul,li{
+    list-style: none;
+
+}
+li{
+    font-family: 'Clash Display', Poppins;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #18181B;
+}
+a {
+    color: black;
+    font-family: 'Clash Display', ;
+    font-weight: 600;
+    text-decoration: none;
+
+    font-size: 1.2rem;
+}
+
+/* HEADER */
+
+
+/* .sign-up{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 4.375rem;
+    
+}
+.sign-up a{
+    border: 1px solid #040301;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+} */
+
+button{
+    background: #630000;
+    color: white;
+    border: none;
+    padding: 0.56rem 1.75rem;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+
+    font-family: Montserrat;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+/* NAV SECION */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 2rem;
+}
+
+nav .nav-links{
+    display: flex;
+    gap: 1.2rem;
+}
+nav > .login-btn {
+    display: flex;
+    gap: 2rem;
+}
+.nav-links li a::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #18181B;
+    transition: .5s;
+}
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+
+/* FIRST CONTAINER */
+.Container-1{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    background-image: url(/Images/Imgg.svg) ;
+    padding-inline: 1rem;
+}
+.first-container .re{
+    color: rgb(250, 137, 0);
+    
+}
+
+.first-container .app{
+    margin-block: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.transitions{
+    width: 250px;
+    height: 250px;
+    border: 0px solid #ffffff;
+    position: absolute;
+    top: 560px;
+    border-radius: 50%;
+}
+img[src*='earth']{
+    -webkit-animation: circle 5s linear infinite;
+    animation: circle 5s linear infinite;
+}
+
+
+@-webkit-keyframes circle{
+    
+    0%{
+        transform: rotate(0deg)translate(-165px)rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)translate(-165px)rotate(-360deg);
+    }
+}
+
+
