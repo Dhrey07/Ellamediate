@@ -9,9 +9,6 @@
     margin: 0;
     
 }
-:root{
-    --lower-bg: #FAFAFA;
-}
 
 html {
     font-family: poppins;
@@ -60,27 +57,20 @@ p{
     font-family: 'Source Sans Pro', Poppins;
     font-weight: 500;
 }
-
-/* .h12{
-    
-    /* max-width: 1440px; */
-
-    padding-inline: 1rem;
-    margin: auto;
-    
-    
-} */
+li::marker{
+    list-style: none;
+}
 
 ul,li{
     list-style: none;
 
 }
 li{
-    font-family: Figtree, Poppins;
+    font-family: 'Source Sans Pro', Poppins;
     font-weight: 400;
     font-size: 1rem;
     line-height: 24px;
-    color: #18181B;
+    color: #650F0E;
 }
 a {
     color: #650F0E;
