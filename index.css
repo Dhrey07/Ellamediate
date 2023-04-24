@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Karla:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Karla:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+
+
 
 *{
     padding: 0;
@@ -10,7 +14,7 @@
 }
 
 html {
-    font-family: Figtree;
+    font-family: poppins;
     font-weight: 400;
     font-size: 16px;
     box-sizing: border-box;
@@ -18,16 +22,17 @@ html {
     color: var(--black);
 }
 h1{
-    font-family: Figtree, Poppins;
+    font-family: 'Source Sans Pro', Poppins;
     font-style: normal;
-    font-weight: 800;
-    font-size: 3.5rem;
-    line-height: 92px;
-    margin-block: 2rem;
+    font-weight: 900;
+    font-size: 3.125rem;
+    line-height: 63px;
+    margin-block: 2.5rem;
+    color: #ffffff;
     
 }
 h2{
-    font-family: Figtree, Poppins;
+    font-family: 'Source Sans Pro', Poppins;
     font-style: normal;
     font-weight: 700;
     font-size: 2.625rem;
@@ -35,7 +40,7 @@ h2{
     margin-block: 1.6875rem;
 }
 h3{
-    font-family: Figtree, Poppins;
+    font-family: 'Source Sans Pro', Poppins;
     font-style: normal;
     font-weight: 700;
     font-size: 1.3125rem;
@@ -43,20 +48,20 @@ h3{
     margin-top: 1.6875rem;
 }
 h4{
-    font-family: Figtree, Poppins;
+    font-family: 'Source Sans Pro', Poppins;
     font-weight: 500;
-    font-size: 1.1rem;
-    line-height: 24px;
-    color: #FAFAFA;
+    font-size: 1.25rem;
+    line-height: 28px;
+    margin-top: 1.5rem;
 }
 p{
     line-height: 26px;
-    font-size: 1rem;
-    font-family: Figtree, Poppins;
+    font-size: 1.25rem;
+    font-family: 'Source Sans Pro', Poppins;
     font-weight: 500;
 }
 
-.h12{
+/* .h12{
     
     /* max-width: 1440px; */
 
@@ -64,13 +69,8 @@ p{
     margin: auto;
     
     
-}
-header{
-    width: 100%;
-    padding: 2.5rem 0rem;
-    background-color: #FAFAFA;
-    
-}
+} */
+
 ul,li{
     list-style: none;
 
@@ -83,7 +83,7 @@ li{
     color: #18181B;
 }
 a {
-    color: black;
+    color: #650F0E;
     font-family: Figtree, Poppins;
     font-weight: 600;
     text-decoration: none;
@@ -103,8 +103,8 @@ button{
     cursor: pointer;
     box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
 
-    font-family: Figtree;
-    font-size: 1rem;
+    font-family: 'Source Sans Pro';
+    font-size: 1.2rem;
     line-height: 24px;
     font-weight: 500;
 }
@@ -114,8 +114,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-block: 2rem;
     max-width: 1440px;
+    padding-block: 2rem;
     margin: auto;
 }
 
@@ -133,7 +133,7 @@ nav > .login-btn {
     display: block;
     height: 3px;
     width: 0;
-    background: #18181B;
+    background: #650F0E;
     transition: 0.5s;
 }
 .nav-links li a:hover::after{
@@ -143,26 +143,41 @@ nav > .login-btn {
 
 /* FIRST CONTAINER */
 .first{
-    background-image: url(Images/Imgg.svg) ;
+    background: linear-gradient(#F4AF30 50%, #650F0E 50%);
 }
 .Container-1{
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+    justify-content: space-between;
     max-width: 1440px;
     padding-inline: 3rem;
     margin: auto;
+
+}
+.first-container{
+    max-width: 576px;
+}
+.first-container > p{
+    color: #ffffff;
 }
 .first-container .re{
-    color: rgb(250, 137, 0);
+    color: #650F0E;
+    
     
 }
-
+.app-btn{
+    border-radius: 4px;
+    background: #F4AF30;
+    color: #ffffff;
+    width: 100%;
+    
+}
 .first-container .app{
+    max-width: 260px;
     margin-block: 2rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 30px;
 }
 
 .transitions{
@@ -170,10 +185,10 @@ nav > .login-btn {
     height: 250px;
     border: 0px solid #ffffff;
     position: absolute;
-    top: 560px;
+    top: 400px;
     border-radius: 50%;
 }
-img[src*='earth']{
+img[src*='Open-chat']{
     -webkit-animation: circle 5s linear infinite;
     animation: circle 5s linear infinite;
 }
@@ -190,6 +205,25 @@ img[src*='earth']{
 }
 /* CONTAINER-2 */
 
+
+.partners{
+    margin-inline-start: 5rem;
+}
+.trusted-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.abt-ellamediate{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 5rem;
+    gap: 50px;
+}
 .container-2{
     max-width: 1440px;
     padding-block: 6rem;
@@ -197,20 +231,97 @@ img[src*='earth']{
     margin: auto;
 
 }
-.ella-doings p{
+.ella-1{
+    background: url(Images/img1.svg)no-repeat;
+    max-width: 459px;
+    
+}
+.ella-1 h2{
     font-weight: 600;
     font-size: 2.5rem !important;
     line-height: 52px;
     letter-spacing: 0.2px;
-    max-width: 585px;
+    
+    padding: 275px 57px 103px 44px;
+
+    color: #FAFAFA;
+
 }
-.ella-doings{
+
+.ella-2{
+    background: url(Images/img4.svg)no-repeat;
+    max-width: 459px;
+    
+}
+.ella-2 h2{
+    font-weight: 600;
+    font-size: 2.5rem !important;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    
+    padding: 275px 57px 103px 44px;
+
+    color: #FAFAFA;
+
+}
+.ella-3{
+    background: url(Images/img2.svg)no-repeat;
+    max-width: 459px;
+    
+}
+.ella-3 h2{
+    font-weight: 600;
+    font-size: 2.5rem !important;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    padding: 275px 57px 103px 44px;
+
+    color: #FAFAFA;
+
+}
+.ella-4{
+    background: url(Images/img3.svg)no-repeat;
+    max-width: 459px;
+    
+}
+.ella-4 h2{
+    font-weight: 600;
+    font-size: 2.5rem !important;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    padding: 275px 57px 103px 44px;
+
+    color: #FAFAFA;
+
+}
+
+/* CONTAINER -3  */
+
+.container-3{
+    background: linear-gradient(to right, #650F0E 50%,  #FAFAFA 50%);
+    
+}
+.container-3-item{
+    max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin: auto;
+
 }
-.ella-doings img{
-    border-radius: 20px;
+.container-3-items-l{
+    background: #F4AF30;
+    padding: 50px 50px;
+}
+.container-3-items-l > h2{
+    color: #FAFAFA;
+}
+.container-3-items-l img{
+    color: #ffffff;
 }
 
+.container-3-items-l > h4{
+    max-width: 500px;
+    align-items: center;
+    color: #FAFAFA;
+}
