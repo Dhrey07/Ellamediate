@@ -78,10 +78,13 @@ a {
     font-weight: 400;
     text-decoration: none;
 
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* HEADER */
+header{
+    background: #FAFAFA;
+}
 
 
 button{
@@ -89,7 +92,7 @@ button{
     color: white;
     border: none;
     padding: 0.56rem 1.75rem;
-    border-radius: 30px;
+    border-radius: 20px;
     cursor: pointer;
     box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
 
@@ -101,6 +104,7 @@ button{
 
 /* NAV SECION */
 nav{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,7 +112,98 @@ nav{
     padding-block: 2rem;
     margin: auto;
     padding-inline: 1rem;
+    z-index: 100;
+    background: #FAFAFA;
+    
 }
+
+/* MOBILE  */
+
+.hamburger{
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    
+    
+    appearance: none;
+	background: none;
+	outline: none;
+	border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 5px;
+	background-color: #650F0E;
+	margin: 6px 0px;
+	transition: 0.4s;
+}
+.hamburger.is-active:before {
+	transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+	transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+	opacity: 0;
+}
+
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	z-index: 98;
+	background-color: #623231;
+	padding-top: 120px;
+	transition: 0.6s;
+    margin-inline: auto;
+}
+
+.mobile-nav.is-active {
+	left: 0;
+}
+
+.mobile-nav a {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	margin: 0 auto 16px;
+	text-align: center;
+	padding: 12px 16px;
+	background: #F4AF30;
+    border-radius: 4px;
+
+	color: #FFF;
+	text-decoration: none;
+}
+.mobile-nav .login-btns{
+    display: flex;
+    gap: 1rem;
+}
+.mobile-nav a:hover {
+	background-color: #24104f;
+}
+
+@media (min-width: 768px) {
+	.mobile-nav {
+		display: none;
+	}
+
+	.hamburger {
+		display: none;
+	}
+}
+
 
 nav .nav-links{
     display: flex;
@@ -117,8 +212,14 @@ nav .nav-links{
 }
 nav > .login-btn {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
+
+/* nav > .login-btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem auto;
+} */
 .nav-links li a::after {
     content: '';
     display: block;
@@ -137,11 +238,12 @@ nav > .login-btn {
     background: linear-gradient(#F4AF30 50%, #650F0E 50%);
 }
 .Container-1{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1440px;
-    padding-inline: 3rem;
+    padding-inline: 1.5%;
     margin: auto;
 
 }
@@ -155,6 +257,10 @@ nav > .login-btn {
     color: #650F0E;
     
     
+}
+.app{
+    
+    align-self: flex-end;
 }
 .app-btn{
     border-radius: 4px;
@@ -170,13 +276,17 @@ nav > .login-btn {
     flex-direction: column;
     align-items: center;
 }
+.transition{
+    align-self: end;
+    max-width: 100%;
+}
 
 .transitions{
     width: 250px;
     height: 250px;
     border: 0px solid #ffffff;
     position: absolute;
-    top: 400px;
+    bottom: -50px;
     border-radius: 50%;
 }
 img[src*='Open-chat']{
@@ -198,13 +308,19 @@ img[src*='Open-chat']{
 
 
 .partners{
-    margin-inline-start: 5rem;
+    margin-inline-start: 10%;
 }
 .trusted-img{
+    /* height: 40px; */
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
+/* .trusted-img img{
+    width: 100%;
+    height: auto;
+} */
 
 
 .abt-ellamediate{
@@ -218,7 +334,7 @@ img[src*='Open-chat']{
 .container-2{
     max-width: 1440px;
     padding-block: 6rem;
-    padding-inline: 7.75rem;
+    padding-inline: 4%;
     margin: auto;
 
 }
@@ -233,7 +349,11 @@ img[src*='Open-chat']{
     line-height: 52px;
     letter-spacing: 0.2px;
     
-    padding: 275px 57px 103px 44px;
+
+
+    padding-inline: 10%;
+    padding-block: 60% 8%;
+    /* padding: 20% 57px 103px 44px; */
 
     color: #FAFAFA;
 
@@ -250,7 +370,9 @@ img[src*='Open-chat']{
     line-height: 52px;
     letter-spacing: 0.2px;
     
-    padding: 275px 57px 103px 44px;
+    padding-inline: 10%;
+    padding-block: 60% 8%;
+    /* padding: 275px 57px 103px 44px; */
 
     color: #FAFAFA;
 
@@ -265,7 +387,10 @@ img[src*='Open-chat']{
     font-size: 2.5rem !important;
     line-height: 52px;
     letter-spacing: 0.2px;
-    padding: 275px 57px 103px 44px;
+
+    padding-inline: 10%;
+    padding-block: 60% 8%;
+    /* padding: 275px 57px 103px 44px; */
 
     color: #FAFAFA;
 
@@ -280,7 +405,10 @@ img[src*='Open-chat']{
     font-size: 2.5rem !important;
     line-height: 52px;
     letter-spacing: 0.2px;
-    padding: 275px 57px 103px 44px;
+
+    padding-inline: 10%;
+    padding-block: 60% 8%;
+    /* padding: 275px 57px 103px 44px; */
 
     color: #FAFAFA;
 
@@ -295,8 +423,9 @@ img[src*='Open-chat']{
 .container-3-item{
     max-width: 1440px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: auto;
 
 }
@@ -308,6 +437,11 @@ img[src*='Open-chat']{
     color: #FAFAFA;
     font-size: 2rem;
     margin-block: 0px;
+}
+.container-3-items-r img{
+    max-width: 100%;
+    height: auto;
+    
 }
 
 
@@ -338,11 +472,53 @@ footer .socials{
     display: flex;
     gap: 2rem;
 }
+
 footer img{
     cursor: pointer;
 }
 .more-info {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     gap: 1.5rem;
 }
+@media screen and (max-width: 550px){
+    nav .login-btn{
+        display: none;
+    }
+    footer p, 
+    footer a{
+        font-size: 14px;
+    }
+    nav{
+        position: fixed;
+        width: 90%;
+        top: 0;
+        padding-inline: 5%;
+        padding-block: 1rem;
+    }
+    .first{
+        margin-top: 2rem;
+    }
+
+}
+@media (min-width: 864px){
+    nav .hamburger{
+        display: none;
+    }
+    .mobile-nav{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 864px){
+
+    nav .nav-link{
+        display: none;
+    }
+    .Container-1 .transition{
+        display: none;
+    }
+}
+
