@@ -305,22 +305,31 @@ img[src*='Open-chat']{
     }
 }
 /* CONTAINER-2 */
-
-
+.partners #logos{
+    white-space: nowrap;
+    overflow: hidden;
+}
+#logos:hover .trusted-img{
+    animation-play-state: paused;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
 .partners{
     margin-inline-start: 10%;
 }
 .trusted-img{
-    /* height: 40px; */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    display: inline-block;
+    animation: 7s slide infinite linear;
 }
-/* .trusted-img img{
-    width: 100%;
-    height: auto;
-} */
+.trusted-img img{
+    margin: 0 30px;
+}
 
 
 .abt-ellamediate{
@@ -352,7 +361,7 @@ img[src*='Open-chat']{
 
 
     padding-inline: 10%;
-    padding-block: 60% 8%;
+    padding-block: 65% 10%;
     /* padding: 20% 57px 103px 44px; */
 
     color: #FAFAFA;
@@ -371,7 +380,7 @@ img[src*='Open-chat']{
     letter-spacing: 0.2px;
     
     padding-inline: 10%;
-    padding-block: 60% 8%;
+    padding-block: 55% 20%;
     /* padding: 275px 57px 103px 44px; */
 
     color: #FAFAFA;
@@ -486,6 +495,28 @@ footer img{
 @media screen and (max-width: 550px){
     nav .login-btn{
         display: none;
+    }
+    h1{
+        font-size: 2rem;
+        line-height: 40px;
+        max-width: 350px;
+        margin-block: 3rem;
+    }
+    p{
+        font-size: 1em;
+    }
+    .app-btn{
+        font-size: 1em;
+    }
+    .first-container .app{
+        margin: 1rem auto;
+    }
+    /* Container 2 */
+    .container-2{
+        padding-block: 2rem;
+    }
+    .partners{
+        margin-inline-start: 1px;
     }
     footer p, 
     footer a{
