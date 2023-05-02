@@ -354,7 +354,7 @@ img[src*='Open-chat']{
 }
 .ella-1 h2{
     font-weight: 600;
-    font-size: 2.5rem !important;
+    font-size: 2.5rem ;
     line-height: 52px;
     letter-spacing: 0.2px;
     
@@ -375,7 +375,7 @@ img[src*='Open-chat']{
 }
 .ella-2 h2{
     font-weight: 600;
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
     line-height: 52px;
     letter-spacing: 0.2px;
     
@@ -393,7 +393,7 @@ img[src*='Open-chat']{
 }
 .ella-3 h2{
     font-weight: 600;
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
     line-height: 52px;
     letter-spacing: 0.2px;
 
@@ -411,7 +411,7 @@ img[src*='Open-chat']{
 }
 .ella-4 h2{
     font-weight: 600;
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
     line-height: 52px;
     letter-spacing: 0.2px;
 
@@ -501,6 +501,19 @@ footer img{
         line-height: 40px;
         max-width: 350px;
         margin-block: 3rem;
+    }
+    .container-3-items-l h2{
+        font-size: 1.5rem;
+
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .ella-1 h2,
+    .ella-2 h2,
+    .ella-3 h2,
+    .ella-4 h2{
+        font-size: 1.5rem;
     }
     p{
         font-size: 1em;
