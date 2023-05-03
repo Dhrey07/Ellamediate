@@ -561,7 +561,7 @@ footer img{
     .ella-2 h2,
     .ella-3 h2,
     .ella-4 h2{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     p{
         font-size: 1em;
@@ -589,6 +589,19 @@ footer img{
         top: 0;
         padding-inline: 5%;
         padding-block: 1rem;
+    }
+    .location{
+        padding-block: 0.5rem;
+    }
+    img[src*='Ella-Logos-02']{
+        width: 180px;
+    }
+    img[src*='twitter'],
+    img[src*='instagram'],
+    img[src*='facebook'],
+    img[src*='linkedin']{
+        width: 20px;
+        height: 20px;
     }
     .first{
         padding-top: 2rem;
