@@ -188,6 +188,7 @@ nav{
 }
 .mobile-nav .login-btns{
     display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
 .mobile-nav a:hover {
