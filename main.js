@@ -15,3 +15,8 @@ window.onload = function () {
 		mobile_menu.classList.toggle('is-active');
 	});
 }
+// WINDOW LOADER
+const loader = document.getElementById("preloader");
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})

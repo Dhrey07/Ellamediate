@@ -83,7 +83,7 @@ a {
 
 /* HEADER */
 header{
-    background: #FAFAFA;
+    background: #ffffff;
 }
 
 
@@ -113,7 +113,7 @@ nav{
     margin: auto;
     padding-inline: 1rem;
     z-index: 100;
-    background: #FAFAFA;
+    background: #ffffff;
     
 }
 
@@ -191,7 +191,7 @@ nav{
     gap: 1rem;
 }
 .mobile-nav a:hover {
-	background-color: #24104f;
+	background-color: rgb(11, 10, 13) 11, 15);
 }
 
 @media (min-width: 768px) {
@@ -232,8 +232,27 @@ nav > .login-btn {
     width: 100%;
 }
 
+/* PRELOADER */
+#preloader{
+    background: #ffffff url(Images/another.gif) no-repeat center center;
+    height: 100vh;
+    background-size: 30%;
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+    overflow: hidden;
+}
+#preloader h1{
+    text-align: center;
+    color: #650F0E;
+    padding-top: 85%;
+    margin: auto;
+    font-size: 2rem;
+}
+
 
 /* FIRST CONTAINER */
+
 .first{
     background: linear-gradient(#F4AF30 50%, #650F0E 50%);
 }
@@ -305,6 +324,8 @@ img[src*='Open-chat']{
     }
 }
 /* CONTAINER-2 */
+
+/* FOR LOGO ANIMATION */
 .partners #logos{
     white-space: nowrap;
     overflow: hidden;
@@ -464,6 +485,33 @@ img[src*='Open-chat']{
     align-items: center;
     gap: .5rem;
 }
+
+.location-info{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    justify-content: space-evenly;
+    gap: .7rem;
+    margin: auto;
+    padding-inline: 4%;
+}
+.location{
+    max-width: 300px;
+    background: #f8f0e1;
+    border-radius: 4px;
+    padding-inline: 1%;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+    margin-block: 3rem;
+}
+.location p{
+    margin: .7rem;
+}
+
+/* FOOTER */
 footer{
     
     max-width: 1440px;
@@ -543,7 +591,8 @@ footer img{
         padding-block: 1rem;
     }
     .first{
-        margin-top: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 0.5rem;
     }
 
 }
